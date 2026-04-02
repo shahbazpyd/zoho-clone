@@ -41,41 +41,48 @@ const Features = () => {
   };
 
   return (
-    <section className="features">
-      <div className="features-container">
-        
-        {/* LEFT SIDE */}
-        <div className="accordion">
-          {data.map((item, index) => (
-            <div key={index} className="accordion-item">
-              
-              <div
-                className="accordion-title"
-                onClick={() => toggleItem(index)}
-              >
-                <h3>{item.title}</h3>
-                <span>{activeIndexes.includes(index) ? "−" : "+"}</span>
-              </div>
+    <section class="features">
+      <div class="features-header">
+        <h2>Customer service software built for the way India serves</h2>
+        <p>
+          We’ve all seen the complaint box. Simple, sturdy, built for customer
+          trust. Its noble purpose still matters, but Indian businesses have
+          evolved. Born in rural India, Zoho Desk carries that same spirit of
+          service into the digital world.
+        </p>
+      </div>
 
-              <div
-                className={`accordion-content ${
-                  activeIndexes.includes(index) ? "open" : ""
-                }`}
-              >
-                <p>{item.content}</p>
-              </div>
+      <div class="features-content">
+        <div class="accordion">
+          <div class="item active">
+            <h4>Manage all channels from one place</h4>
+            <p>Emails, texts, DMs, or calls—every customer complaint lands in Zoho Desk's workspace, organised and ready to be solved.</p>
+          </div>
 
-            </div>
-          ))}
-        </div>
+          <div class="item">
+            <h4>Handle volume at scale</h4>
+          </div>
 
-        {/* RIGHT SIDE MOCK */}
-        <div className="features-preview">
-          <div className="preview-box">
-            <p>📊 UI Preview Area</p>
+          <div class="item">
+            <h4>Handle volume at scale</h4>
+          </div>
+
+          <div class="item">
+            <h4>Automate repetitive work</h4>
+          </div>
+
+          <div class="item">
+            <h4>Track performance</h4>
+          </div>
+
+          <div class="item">
+            <h4>Support in regional languages</h4>
           </div>
         </div>
 
+        <div class="feature-image">
+          <img src="//www.zohowebstatic.com/sites/zweb/images/desk/zoho-desk-cmb-support-in-regional-languages.svg" />
+        </div>
       </div>
     </section>
   );

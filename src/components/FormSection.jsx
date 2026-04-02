@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/main.css";
+import zoho_logo from "../assets/form_zoho.png";
 
 const FormSection = () => {
   const [formData, setFormData] = useState({
@@ -24,10 +25,8 @@ const FormSection = () => {
     let newErrors = {};
 
     if (!formData.name) newErrors.name = "Name is required";
-    if (!formData.email.includes("@"))
-      newErrors.email = "Valid email required";
-    if (formData.phone.length < 10)
-      newErrors.phone = "Phone must be 10 digits";
+    if (!formData.email.includes("@")) newErrors.email = "Valid email required";
+    if (formData.phone.length < 10) newErrors.phone = "Phone must be 10 digits";
 
     return newErrors;
   };
@@ -54,54 +53,38 @@ const FormSection = () => {
   };
 
   return (
-    <section className="form-section">
-      <div className="form-container">
+    <section class="form-section">
+      <div class="form-card">
+        <div class="form-left">
+          <img src={zoho_logo} alt="logo" />
+          <h2>Experience unwavering stability</h2>
+        </div>
 
-        <h2>Get Started with Zoho Desk</h2>
+        <div class="form-right">
+          <label>Name*</label>
+          <input type="text" placeholder="What do we call you?" />
 
-        <form onSubmit={handleSubmit}>
-
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          {errors.name && <span className="error">{errors.name}</span>}
-
+          <label>Email address*</label>
           <input
             type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          {errors.email && <span className="error">{errors.email}</span>}
-
-          <input
-            type="text"
-            name="phone"
-            placeholder="Phone"
-            value={formData.phone}
-            onChange={handleChange}
-          />
-          {errors.phone && <span className="error">{errors.phone}</span>}
-
-          <input
-            type="text"
-            name="company"
-            placeholder="Company"
-            value={formData.company}
-            onChange={handleChange}
+            placeholder="Please enter your business email ID"
           />
 
-          <button type="submit" className="primary-btn">
-            SUBMIT
-          </button>
+          <label>Phone</label>
+          <input type="text" placeholder="+91 Phone" />
 
-        </form>
+          <button class="submit-btn">SUBMIT REQUEST</button>
 
+          <p class="privacy">
+            By submitting this form, you agree to the processing of personal
+            data according to our Privacy Policy.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Terms of Service | Privacy Policy</p>
+        <p>© 2026, Zoho Corporation Pvt. Ltd. All Rights Reserved.</p>
       </div>
     </section>
   );

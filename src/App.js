@@ -5,7 +5,7 @@ import Features from "./components/Features";
 import WhyChoose from "./components/WhyChoose";
 import CTA from "./components/CTA";
 import FormSection from "./components/FormSection";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <WhyChoose />
       <CTA />
       <FormSection />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

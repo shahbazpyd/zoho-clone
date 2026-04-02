@@ -1,34 +1,50 @@
 import React from "react";
 import "../styles/main.css";
+import heroImg from "../assets/hero.png";
 
 const Hero = () => {
   return (
     <section className="hero">
-      <div className="hero-container">
-        
-        {/* LEFT CONTENT */}
-        <div className="hero-left">
-          <h1>Digital complaint box for every business</h1>
-
-          <p>
-            Checklist for scaling a business often looks like this: bigger
-            office, bigger team, bigger deals. Yet in thinking big, the
-            customer care that defined the early days is forgotten.
-          </p>
-
-          <button className="primary-btn">TRY ZOHO DESK</button>
+        <div className="hero-image">
+          <img src={heroImg} alt="hero" />
         </div>
+      <div className=" hero-wrapper">
+        {/* CENTER IMAGE */}
+        
 
-        {/* RIGHT CONTENT (UI Mock) */}
-        <div className="hero-right">
-          <div className="mock-circle">
-            <span>🎧</span>
+        {/* TOP LEFT LOGO */}
+        
+
+        {/* CONTENT */}
+        <div className="hero-content">
+
+          {/* LEFT */}
+          <div className="hero-left">
+            <h1>Digital complaint box for every business</h1>
           </div>
 
-          <div className="floating-box">📞</div>
-          <div className="floating-box email">✉️</div>
-          <div className="floating-box chat">💬</div>
+          {/* RIGHT */}
+          <div className="hero-right-text">
+            <p>
+              Checklist for scaling a business often looks like this: bigger office,
+              bigger team, bigger deals. Yet in thinking big, the customer care that
+              defined the early days is forgotten. But Indian businesses know how
+              to care.
+            </p>
+
+            <button className="primary-btn">TRY ZOHO DESK</button>
+          </div>
+
         </div>
+
+        {/* CENTER IMAGE */}
+        {/* <div className="hero-image">
+          <img src={heroImg} alt="hero" />
+        </div> */}
+
+       
+
+      
 
       </div>
     </section>

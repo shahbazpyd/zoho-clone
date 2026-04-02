@@ -1,53 +1,45 @@
 import React from "react";
 import "../styles/main.css";
+import why_first from "../assets/why_first.png";
+import why_second from "../assets/why_second.png";
+import why_third from "../assets/why_third.png";
+import why_fourth from "../assets/why_fourth.png";
+
 
 // IMPORT SVG ICONS
-import { FiSettings } from "react-icons/fi";
-import { FaRupeeSign } from "react-icons/fa";
-import { FiFileText } from "react-icons/fi";
-import { FiShield } from "react-icons/fi";
+// import { FiSettings } from "react-icons/fi";
+// import { FaRupeeSign } from "react-icons/fa";
+// import { FiFileText } from "react-icons/fi";
+// import { FiShield } from "react-icons/fi";
 
 const WhyChoose = () => {
   return (
-    <section className="why">
-      <div className="why-container">
+    <section class="why">
+      <h2>Why choose Zoho Desk?</h2>
 
-        <h2>Why choose Zoho Desk?</h2>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="icon"><img src={why_first} alt="" /></div>
+          <h4>Quick implementation</h4>
+          <p>Dedicated onboarding program for faster implementation.</p>
+        </div>
 
-        <div className="why-grid">
+        <div class="why-item">
+          <div class="icon"><img src={why_second} alt="" /></div>
+          <h4>No hidden costs</h4>
+          <p>Upfront pricing plans so you only pay what’s quoted.</p>
+        </div>
 
-          <div className="why-card">
-            <FiSettings className="icon" />
-            <h3>Quick implementation</h3>
-            <p>
-              Dedicated onboarding program for faster implementation than most help desk software.
-            </p>
-          </div>
+        <div class="why-item">
+          <div class="icon"><img src={why_third} alt="" /></div>
+          <h4>Simple contracts</h4>
+          <p>Adjust your plan anytime with no forced renewals.</p>
+        </div>
 
-          <div className="why-card">
-            <FaRupeeSign className="icon" />
-            <h3>No hidden costs</h3>
-            <p>
-              Upfront pricing plans so you only pay what’s quoted and get every rupee’s worth.
-            </p>
-          </div>
-
-          <div className="why-card">
-            <FiFileText className="icon" />
-            <h3>Simple contracts</h3>
-            <p>
-              Adjust your plan any time and enjoy easy cancellations with no forced renewals.
-            </p>
-          </div>
-
-          <div className="why-card">
-            <FiShield className="icon" />
-            <h3>Always secure</h3>
-            <p>
-              Built with top-grade security, your data stays protected in world-class facilities.
-            </p>
-          </div>
-
+        <div class="why-item">
+          <div class="icon"><img src={why_fourth} alt="" /></div>
+          <h4>Always secure</h4>
+          <p>Built with top-grade security and safe hosting.</p>
         </div>
       </div>
     </section>
