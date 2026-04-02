@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/main.css";
+import "./WhyChoose.css";
 import why_first from "../assets/why_first.png";
 import why_second from "../assets/why_second.png";
 import why_third from "../assets/why_third.png";

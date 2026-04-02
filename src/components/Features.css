@@ -1,0 +1,64 @@
+/* FEATURES SECTION */
+.features {
+  background: #062d22;
+  color: white;
+  padding: 120px 0;
+}
+
+.features-header {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.features-header h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.features-header p {
+  color: #c7d9d1;
+}
+
+.features-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ACCORDION */
+.accordion {
+  width: 45%;
+}
+
+.item {
+  border-bottom: 1px solid #1f4d3d;
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+.item h4 {
+  font-size: 18px;
+}
+
+.item p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #a7c1b7;
+}
+
+.item.active h4 {
+  color: #00ffb3;
+}
+
+.feature-image {
+  width: 45%;
+}
+
+.feature-image img {
+  width: 100%;
+}

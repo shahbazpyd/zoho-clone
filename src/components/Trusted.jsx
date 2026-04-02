@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/main.css";
+import "./Trusted.css";
 
 // IMPORT LOGOS
 import godrej from "../assets/logos/godrej.png";

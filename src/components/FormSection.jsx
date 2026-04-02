@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/main.css";
+import "./FormSection.css";
 import zoho_logo from "../assets/form_zoho.png";
 
 const FormSection = () => {
