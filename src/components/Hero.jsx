@@ -3,7 +3,7 @@ import "./Hero.css";
 import heroImg from "../assets/hero.png";
 import middleLogo from "../assets/middle_logo.png";
 
-const Hero = () => {
+const Hero = ({ onTryZoho }) => {
   return (
     <section className="hero">
         <div className="hero-image">
@@ -34,7 +34,7 @@ const Hero = () => {
               to care.
             </p>
 
-            <button className="primary-btn">TRY ZOHO DESK</button>
+            <button className="primary-btn" onClick={onTryZoho}>TRY ZOHO DESK</button>
           </div>
 
         </div>
