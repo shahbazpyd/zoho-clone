@@ -1,12 +1,14 @@
 import React from "react";
 import "./Hero.css";
 import heroImg from "../assets/hero.png";
+import middleLogo from "../assets/middle_logo.png";
 
 const Hero = () => {
   return (
     <section className="hero">
         <div className="hero-image">
-          <img src={heroImg} alt="hero" />
+          <img src={heroImg} alt="hero" className="left-logo"/>
+          <img src={middleLogo} alt="middle-logo" className="middle-logo" />
         </div>
       <div className=" hero-wrapper">
         {/* CENTER IMAGE */}

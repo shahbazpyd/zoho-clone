@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  /* position: relative; */
 }
 
 .trusted-top {
@@ -21,7 +22,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.trusted-top h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
 .logos {
   display: flex;
   justify-content: space-between;
@@ -31,10 +35,10 @@
 }
 
 .logos img {
-  height: 36px;
-  padding: 8px 16px;
-  background: #f5efe6;
-  border-radius: 10px;
+  height: 48px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
 }
 
 .trusted-right {
@@ -69,11 +73,57 @@
 .meet-btn {
   position: absolute;
   top: -20px;
-  left: 140px;
+  left: 200px;
   background: #1f7a5c;
   color: white;
   border: none;
   padding: 10px 18px;
   border-radius: 20px;
   font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .trusted-section {
+    padding-top: 60px;
+  }
+
+  .trusted-card {
+    width: 90%;
+    padding: 40px 20px;
+    padding-top: 50px;
+  }
+
+  .trusted-top {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .trusted-top h3 {
+    font-size: 22px;
+  }
+
+  .trusted-right {
+    width: 100%;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+
+  .logos img {
+    height: 36px;
+  }
+
+  .meet-btn {
+    position: absolute;
+    top: 40px;
+    left: 30%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+  }
 }

@@ -23,26 +23,63 @@
   text-align: left;
   display: flex;
   gap: 20px;
+  align-items: flex-start;
 }
 
-.why-item h4 {
-  margin-bottom: 8px;
+.why-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.why-text h4 {
+  margin-bottom: 0;
   font-size: 18px;
+  white-space: nowrap;
 }
 
-.why-item p {
+.why-text p {
   font-size: 14px;
   color: #555;
 }
 
 .icon {
   font-size: 28px;
-  background: #d7f5e9;
-  padding: 12px;
-  border-radius: 12px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
 }
 
 .icon img {
-  width: 32px;
-  height: 32px;
+  width: 60px;
+  height: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .why {
+    padding: 80px 0;
+  }
+
+  .why h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    width: 90%;
+    gap: 30px;
+  }
+
+  .why-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon img {
+    width: 48px;
+    height: 48px;
+  }
 }

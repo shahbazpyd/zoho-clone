@@ -47,3 +47,28 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cta {
+    padding: 80px 20px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .cta h3 {
+    font-size: 18px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cta .primary-btn,
+  .cta .secondary-btn {
+    width: 100%;
+  }
+}

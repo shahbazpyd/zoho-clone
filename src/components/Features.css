@@ -62,3 +62,28 @@
 .feature-image img {
   width: 100%;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .features {
+    padding: 80px 0;
+  }
+
+  .features-header h2 {
+    font-size: 30px;
+  }
+
+  .features-content {
+    flex-direction: column;
+    width: 90%;
+    gap: 40px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .feature-image {
+    width: 100%;
+  }
+}

@@ -60,3 +60,22 @@ p {
   border-radius: 6px;
   cursor: pointer;
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
