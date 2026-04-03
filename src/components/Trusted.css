@@ -82,26 +82,45 @@
   font-size: 14px;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE - TABLET */
+@media (max-width: 1024px) {
+  .trusted-card {
+    width: 85%;
+    padding: 35px 40px;
+  }
+
+  .trusted-top h3 {
+    font-size: 26px;
+  }
+
+  .logos img {
+    height: 40px;
+  }
+
+  .trusted-right {
+    width: 260px;
+  }
+}
+
+/* RESPONSIVE - MOBILE */
 @media (max-width: 768px) {
   .trusted-section {
-    padding-top: 60px;
+    padding-top: 50px;
   }
 
   .trusted-card {
     width: 90%;
-    padding: 40px 20px;
-    padding-top: 50px;
+    padding: 45px 20px 30px;
   }
 
   .trusted-top {
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
     text-align: center;
   }
 
   .trusted-top h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .trusted-right {
@@ -111,19 +130,18 @@
   .logos {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 16px;
     padding: 0;
   }
 
   .logos img {
-    height: 36px;
+    height: 32px;
   }
 
   .meet-btn {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 30%;
     transform: translateX(-50%);
-    margin-bottom: 0;
   }
 }
